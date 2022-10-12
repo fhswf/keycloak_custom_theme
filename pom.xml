@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.fhswf.keycloak</groupId>
-	<artifactId>fh-swf-theme</artifactId>
+	<artifactId>de.fhswf.keycloak</artifactId>
 	<version>0.0.1</version>
 	<name>FH-Swf Keycloak Theme</name>
 	<packaging>jar</packaging>
