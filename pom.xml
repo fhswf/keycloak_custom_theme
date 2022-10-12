@@ -9,4 +9,11 @@
 	<name>FH-Swf Keycloak Theme</name>
 	<packaging>jar</packaging>
 	<description />
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub fhswf Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/fhswf/main</url>
+		</repository>
+	</distributionManagement>
 </project>
