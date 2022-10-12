@@ -7,5 +7,6 @@
 	<artifactId>fh-swf-theme</artifactId>
 	<version>0.0.1</version>
 	<name>FH-Swf Keycloak Theme</name>
+	<distributionManagement />
 	<description />
 </project>
