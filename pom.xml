@@ -7,14 +7,6 @@
 	<artifactId>fh-swf-theme</artifactId>
 	<version>0.0.1</version>
 	<name>FH-Swf Keycloak Theme</name>
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>main</id>
-			<name>Main Repository</name>
-			<url>https://github.com/fhswf/keycloak_custom_theme/</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
+	<packaging>jar</packaging>
 	<description />
 </project>
