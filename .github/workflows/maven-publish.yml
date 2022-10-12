@@ -29,8 +29,7 @@ jobs:
       - name: List files
         run: ls -a
 
-      - name: Publish to GitHub Packages Apache Maven
-        run: mvn deploy
+      - name: Publish to GitHub Packages
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: mvn deploy

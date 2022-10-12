@@ -13,7 +13,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub fhswf Apache Maven Packages</name>
-			<url>https://github.com/fhswf/keycloak_custom_theme/main</url>
+			<url>https://maven.pkg.github.com/fhswf/keycloak_custom_theme</url>
 		</repository>
 	</distributionManagement>
 </project>
