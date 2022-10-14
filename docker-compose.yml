@@ -31,5 +31,6 @@ services:
       - 8080:8080
     volumes:
       - ./themes/fhswf:/opt/jboss/keycloak/themes/fhswf
+      # - ./themes/fhswf:/opt/keycloak/themes/fhswf Path for quay.io image
     depends_on:
       - postgres
