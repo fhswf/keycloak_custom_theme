@@ -44,21 +44,30 @@
     <div id="kc-modal">
         <div class="modal-wrapper">
             <header class="modal-header">
-                <h1>Cluster Login</h1>
+                <h1>
+                    Willkommen auf der Login Seite des<br>
+                    <span>Clusters für KI & Data Science</span><br>
+                    der Fachhochschule Südwestfalen!
+                </h1>
             </header>
             <div class="modal-body">
                 <p>
-                    Du bist gerade dabei, dich auf dem Cluster einzuloggen. Möchtest du
-                    dich stattdessen mit deinen FH Anmeldedaten über SSO (Single
-                    Sign-On) anmelden?
+                    Bitte wählen Sie eine der unten stehenden Anmeldeoption, um fortzufahren.
+                    Um sich mit der <span>FH Kennung</span> einzuloggen, 
+                    sollte der <span>SSO Login</span> verwendet werden.
                 </p>
             </div>
             <footer class="modal-footer">
-                <#list social.providers as p>
-                    <#if p.alias == 'fh-saml'>
-                        <button class="sso-login" onclick='window.location.href="${p.loginUrl}"'>SSO Login</button>
-                    </#if>
-                </#list>
+                <#if social.providers??>
+                    <#list social.providers as p>
+                        <#if p.alias == 'fh-saml'>
+                            <button class="sso-login" onclick='window.location.href="${p.loginUrl}"'>
+                                <p>SSO Login</p>
+                                <span>mit der FH Kennung</span>
+                            </button>
+                        </#if>
+                    </#list>
+                </#if>
                 <button class="cluster-login">Cluster Login</button>
             </footer>
         </div>
@@ -68,15 +77,19 @@
         id="kc-header"
         class="login-pf-page-header"
     >
-        <h1>Cluster Login</h1>
+        <h1>
+            Cluster Login
+        </h1>
     </div>
     <div id="login-hint">
         <p>Login mit FH Anmeldedaten</p>
-        <#list social.providers as p>
-            <#if p.alias == 'fh-saml'>
-                <a href="${p.loginUrl}">Hier klicken</a>
-            </#if>
-        </#list>
+        <#if social.providers??>
+            <#list social.providers as p>
+                <#if p.alias == 'fh-saml'>
+                    <a href="${p.loginUrl}">Hier klicken</a>
+                </#if>
+            </#list>
+        </#if>
     </div>
     <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
       <header class="${properties.kcFormHeaderClass!}">

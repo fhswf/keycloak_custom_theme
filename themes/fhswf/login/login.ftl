@@ -51,17 +51,6 @@
             </form>
         </#if>
         </div>
-        <#if realm.password && social.providers??>
-            <div id="kc-social-providers" class="kc-social-section kc-social-gray">
-                <hr />
-                <h4>Alternativer Login</h4>
-                <ul class="pf-c-login__main-footer-links kc-social-links">
-                    <#list social.providers as p>
-                        <a href="${p.loginUrl}" id="social-${p.alias}" class="kc-social-provider-name"><span>${p.displayName}</span></a>
-                    </#list>
-                </ul>
-            </div>
-        </#if>
       </div>
     <#elseif section = "info" >
         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>

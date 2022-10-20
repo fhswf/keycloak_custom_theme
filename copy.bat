@@ -1,0 +1,1 @@
+docker cp ./themes/fhswf keycloak:/opt/keycloak/themes/fhswf
