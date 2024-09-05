@@ -61,16 +61,23 @@
     </#if>
 
     <script>
-        let cluster_modal_button = document.querySelector(
+        if (typeof cluster_modal_button !== 'undefined') {
+        let cluster_modal_button = {}
+        }
+
+        cluster_modal_button = document.querySelector(
             '#kc-modal .cluster-login'
         )
+        
 
         cluster_modal_button.addEventListener('click', () => {
             let kc_modal = document.querySelector('#kc-modal')
             kc_modal.style.display = 'none'
         })
-
-        let alert = document.querySelector('.alert')
+        if (typeof cluster_modal_button !== 'undefined') {
+          let alert = {}
+        }
+        alert = document.querySelector('.alert')
         if (alert !== null) {
             let kc_modal = document.querySelector('#kc-modal')
             kc_modal.style.display = 'none'
