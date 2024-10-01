@@ -85,7 +85,7 @@
         <p>Login mit FH Anmeldedaten</p>
         <#if social.providers??>
             <#list social.providers as p>
-                <#if p.alias == 'fh-saml'>
+                <#if p.alias == 'fh-swf-saml2'>
                     <a href="${p.loginUrl}">Hier klicken</a>
                 </#if>
             </#list>
