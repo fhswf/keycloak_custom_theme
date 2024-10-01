@@ -60,7 +60,7 @@
             <footer class="modal-footer">
                 <#if social.providers??>
                     <#list social.providers as p>
-                        <#if p.alias == 'fh-saml'>
+                        <#if p.alias == 'fh-swf-saml2'>
                             <button class="sso-login" onclick='window.location.href="${p.loginUrl}"'>
                                 <p>SSO Login</p>
                                 <span>mit der FH Kennung</span>
